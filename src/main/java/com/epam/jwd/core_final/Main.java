@@ -21,3 +21,8 @@ public class Main {
         Application.start();
     }
 }
+
+/*
+что хранится в метоспейсе
+
+ */

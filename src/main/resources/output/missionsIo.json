@@ -1,0 +1,159 @@
+{
+  "id" : 0,
+  "name" : "Io",
+  "startDate" : {
+    "nano" : 0,
+    "year" : 2020,
+    "monthValue" : 11,
+    "dayOfMonth" : 17,
+    "hour" : 9,
+    "minute" : 24,
+    "second" : 30,
+    "dayOfWeek" : "TUESDAY",
+    "dayOfYear" : 322,
+    "month" : "NOVEMBER",
+    "chronology" : {
+      "id" : "ISO",
+      "calendarType" : "iso8601"
+    }
+  },
+  "endDate" : {
+    "nano" : 0,
+    "year" : 2021,
+    "monthValue" : 1,
+    "dayOfMonth" : 25,
+    "hour" : 9,
+    "minute" : 24,
+    "second" : 31,
+    "dayOfWeek" : "MONDAY",
+    "dayOfYear" : 25,
+    "month" : "JANUARY",
+    "chronology" : {
+      "id" : "ISO",
+      "calendarType" : "iso8601"
+    }
+  },
+  "distance" : 10000,
+  "assignedSpaceShift" : {
+    "id" : 2,
+    "name" : "Philadelphia",
+    "crew" : {
+      "MISSION_SPECIALIST" : 4,
+      "FLIGHT_ENGINEER" : 8,
+      "COMMANDER" : 2,
+      "PILOT" : 4
+    },
+    "flightDistance" : 4870,
+    "readyForNextMissions" : false
+  },
+  "assignedCrew" : [ {
+    "id" : 97,
+    "name" : "Jordyn Henson",
+    "role" : "MISSION_SPECIALIST",
+    "rank" : "SECOND_OFFICER",
+    "readyForNextMissions" : false
+  }, {
+    "id" : 87,
+    "name" : "Jermaine Hester",
+    "role" : "MISSION_SPECIALIST",
+    "rank" : "CAPTAIN",
+    "readyForNextMissions" : false
+  }, {
+    "id" : 86,
+    "name" : "Dani Sykes",
+    "role" : "MISSION_SPECIALIST",
+    "rank" : "TRAINEE",
+    "readyForNextMissions" : false
+  }, {
+    "id" : 83,
+    "name" : "Lemar Gray",
+    "role" : "MISSION_SPECIALIST",
+    "rank" : "SECOND_OFFICER",
+    "readyForNextMissions" : false
+  }, {
+    "id" : 59,
+    "name" : "Nusaybah Buck",
+    "role" : "FLIGHT_ENGINEER",
+    "rank" : "CAPTAIN",
+    "readyForNextMissions" : false
+  }, {
+    "id" : 60,
+    "name" : "Haleema Wills",
+    "role" : "FLIGHT_ENGINEER",
+    "rank" : "SECOND_OFFICER",
+    "readyForNextMissions" : false
+  }, {
+    "id" : 66,
+    "name" : "Om Currie",
+    "role" : "FLIGHT_ENGINEER",
+    "rank" : "CAPTAIN",
+    "readyForNextMissions" : false
+  }, {
+    "id" : 68,
+    "name" : "Harlee Mata",
+    "role" : "FLIGHT_ENGINEER",
+    "rank" : "FIRST_OFFICER",
+    "readyForNextMissions" : false
+  }, {
+    "id" : 72,
+    "name" : "Akeel Levine",
+    "role" : "FLIGHT_ENGINEER",
+    "rank" : "TRAINEE",
+    "readyForNextMissions" : false
+  }, {
+    "id" : 84,
+    "name" : "Carwyn Simmons",
+    "role" : "FLIGHT_ENGINEER",
+    "rank" : "FIRST_OFFICER",
+    "readyForNextMissions" : false
+  }, {
+    "id" : 90,
+    "name" : "Zunaira Adams",
+    "role" : "FLIGHT_ENGINEER",
+    "rank" : "TRAINEE",
+    "readyForNextMissions" : false
+  }, {
+    "id" : 96,
+    "name" : "Sally Gonzales",
+    "role" : "FLIGHT_ENGINEER",
+    "rank" : "CAPTAIN",
+    "readyForNextMissions" : false
+  }, {
+    "id" : 91,
+    "name" : "Heather Clarke",
+    "role" : "PILOT",
+    "rank" : "CAPTAIN",
+    "readyForNextMissions" : false
+  }, {
+    "id" : 92,
+    "name" : "Serenity Gamble",
+    "role" : "PILOT",
+    "rank" : "SECOND_OFFICER",
+    "readyForNextMissions" : false
+  }, {
+    "id" : 88,
+    "name" : "Augustus Moss",
+    "role" : "PILOT",
+    "rank" : "TRAINEE",
+    "readyForNextMissions" : false
+  }, {
+    "id" : 82,
+    "name" : "Marwa Camacho",
+    "role" : "PILOT",
+    "rank" : "CAPTAIN",
+    "readyForNextMissions" : false
+  }, {
+    "id" : 99,
+    "name" : "Shayan Mclellan",
+    "role" : "COMMANDER",
+    "rank" : "TRAINEE",
+    "readyForNextMissions" : false
+  }, {
+    "id" : 95,
+    "name" : "Matthew Sheehan",
+    "role" : "COMMANDER",
+    "rank" : "TRAINEE",
+    "readyForNextMissions" : false
+  } ],
+  "missionResult" : "PLANNED"
+}

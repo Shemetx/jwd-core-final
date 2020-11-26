@@ -1,3 +1,4 @@
+```
 CREATE TABLE crew_member (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(20),
@@ -15,6 +16,7 @@ CREATE TABLE spaceship (
     flight_distance LONG NOT NULL,
     is_ready_for_next_mission BOOLEAN NOT NULL default TRUE
 );
+
 CREATE TABLE spaceship_crew (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     spaceship_id INT NOT NULL ,
@@ -71,7 +73,7 @@ UPDATE crew_member
 SET flight_mission_id = 1
 WHERE id = 1;
 
-
+```
 
 ################################################################
 #JWD Final Java core task
@@ -86,7 +88,7 @@ WHERE id = 1;
 * Console input should be done using java.util.Scanner
 * Input files contains structure description, starts with hash
 
-###Mandatory tasks: 
+###Mandatuory tasks: 
 * In domain package update entity based on requirements
 * Implements service interfaces
 * Extend missed criteria implementations

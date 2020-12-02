@@ -8,14 +8,14 @@ CREATE TABLE user
     login       VARCHAR(20) UNIQUE,
     password    VARCHAR(20)
 );
-
+CREATE INDEX second_name on user(second_name);
 CREATE TABLE user_role
 (
     user_id INT UNIQUE PRIMARY KEY,
     FOREIGN KEY (user_id) REFERENCES user (id),
     role    ENUM ('STUDENT','TEACHER','ADMIN')
 );
-
+create INDEX role_index on user_role(role);
 
 CREATE TABLE course
 (
@@ -23,14 +23,14 @@ CREATE TABLE course
     title       VARCHAR(30) UNIQUE,
     description TEXT
 );
-
+create index course_title_index on course(title);
 CREATE TABLE task
 (
     id          INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     title       VARCHAR(40) UNIQUE,
     description TINYTEXT
 );
-
+create index task_title_index on task(title);
 CREATE TABLE user_courses
 (
     course_id INT,
@@ -38,7 +38,7 @@ CREATE TABLE user_courses
     id_user   INT,
     FOREIGN KEY (id_user) REFERENCES user_role (user_id)
 );
-
+create index user_courses_id on user_courses(id_user);
 CREATE TABLE completed_tasks
 (
     student_id INT,
@@ -55,7 +55,7 @@ CREATE TABlE course_schedule
     day       ENUM ('MONDAY','TUESDAY','WEDNESDAY',
         'THURSDAY','FRIDAY','SATURDAY','SUNDAY')
 );
-
+create index time_index on course_schedule(time);
 CREATE TABLE course_tasks
 (
     course_id INT,
@@ -63,6 +63,7 @@ CREATE TABLE course_tasks
     task_id   INT UNIQUE,
     FOREIGN KEY (task_id) REFERENCES task (id)
 );
+create index course_tasks_id on course_tasks(course_id);
 
 
 ```

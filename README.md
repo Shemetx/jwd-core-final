@@ -1,4 +1,76 @@
 ```
+CREATE TABLE user
+(
+    id          INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    first_name  VARCHAR(20),
+    second_name VARCHAR(20),
+    email       VARCHAR(30) UNIQUE,
+    login       VARCHAR(20) UNIQUE,
+    password    VARCHAR(20)
+);
+
+CREATE TABLE user_role
+(
+    user_id INT UNIQUE PRIMARY KEY,
+    FOREIGN KEY (user_id) REFERENCES user (id),
+    role    ENUM ('STUDENT','TEACHER','ADMIN')
+);
+
+
+CREATE TABLE course
+(
+    id          INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    title       VARCHAR(30) UNIQUE,
+    description TEXT
+);
+
+CREATE TABLE task
+(
+    id          INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    title       VARCHAR(40) UNIQUE,
+    description TINYTEXT
+);
+
+CREATE TABLE user_courses
+(
+    course_id INT,
+    FOREIGN KEY (course_id) REFERENCES course (id),
+    id_user   INT,
+    FOREIGN KEY (id_user) REFERENCES user_role (user_id)
+);
+
+CREATE TABLE completed_tasks
+(
+    student_id INT,
+    FOREIGN KEY (student_id) REFERENCES user_role (user_id),
+    task_id    INT UNIQUE,
+    FOREIGN KEY (task_id) REFERENCES task (id)
+);
+
+CREATE TABlE course_schedule
+(
+    course_id INT,
+    FOREIGN KEY (course_id) REFERENCES course (id),
+    time      TIME,
+    day       ENUM ('MONDAY','TUESDAY','WEDNESDAY',
+        'THURSDAY','FRIDAY','SATURDAY','SUNDAY')
+);
+
+CREATE TABLE course_tasks
+(
+    course_id INT,
+    FOREIGN KEY (course_id) REFERENCES course (id),
+    task_id   INT UNIQUE,
+    FOREIGN KEY (task_id) REFERENCES task (id)
+);
+
+
+```
+
+
+################################################################
+SPACE APPlICATION
+```
 CREATE TABLE crew_member (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(20),
